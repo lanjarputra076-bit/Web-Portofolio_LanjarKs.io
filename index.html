@@ -3,89 +3,109 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beranda - Portofolio Lanjar Kalam Syahputra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beranda | Portofolio Lanjar Kalam Syahputra</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
-  <header class="top-header">
-    <div class="brand-title">Portofolio Lanjar Kalam Syahputra</div>
-    <div class="user-profile-badge">
-      <div class="avatar-circle">LK</div>
-      <span class="user-name">Lanjar Kalam S.</span>
+  <header class="topbar">
+    <button class="burger" id="burger" aria-label="Buka menu">☰</button>
+    <a class="logo" href="index.html">Portofolio Lanjar Kalam Syahputra</a>
+    <div class="top-right">
+      <button class="theme" id="theme" aria-label="Ganti tema">🌙</button>
+      <div class="user"><span class="av">LK</span><b>Lanjar Kalam S.</b></div>
     </div>
   </header>
-
-  <div class="layout-container">
-    <aside class="sidebar">
-      <div>
-        <div class="sidebar-header">
-          <h2>Menu Beranda</h2>
-          <p>Portofolio Lanjar Kalam S.</p>
-          <div class="status-badge"><span class="status-dot"></span> TI25 Class Active</div>
-        </div>
-        <ul class="sidebar-nav">
-          <li><a href="index.html" class="nav-link active"><svg viewBox="0 0 24 24">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                <polyline points="9 22 9 12 15 12 15 22" />
-              </svg>Beranda</a></li>
-          <li><a href="Profile.html" class="nav-link"><svg viewBox="0 0 24 24">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>Profile</a></li>
-          <li><a href="Pendidikan.html" class="nav-link"><svg viewBox="0 0 24 24">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                <path d="M6 12v5c3 3 9 3 12 0v-5" />
-              </svg>Pendidikan</a></li>
-          <li><a href="Keahlian.html" class="nav-link"><svg viewBox="0 0 24 24">
-                <polygon
-                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-              </svg>Keahlian</a></li>
-          <li><a href="Kontak.html" class="nav-link"><svg viewBox="0 0 24 24">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                <polyline points="22,6 12,13 2,6" />
-              </svg>Kontak</a></li>
-        </ul>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-head">
+        <h3>Menu Beranda</h3>
+        <p>Portofolio Lanjar Kalam S.</p>
+        <div class="live"><i></i>TI25 Class Active</div>
       </div>
-      <div class="sidebar-footer">© 2026 Lanjar Kalam Syahputra</div>
+      <nav class="nav">
+        <a href="index.html" class="active"><svg viewBox="0 0 24 24">
+            <path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+          </svg><span>Beranda</span></a>
+        <a href="profile.html"><svg viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" />
+          </svg><span>Profile</span></a>
+        <a href="pendidikan.html"><svg viewBox="0 0 24 24">
+            <path d="M2 9l10-5 10 5-10 5z" />
+            <path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5" />
+            <path d="M22 9v6" />
+          </svg><span>Pendidikan</span></a>
+        <a href="keahlian.html"><svg viewBox="0 0 24 24">
+            <path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.3l1.1-6.2L3 9.7l6.2-.9z" />
+          </svg><span>Keahlian</span></a>
+        <a href="kontak.html"><svg viewBox="0 0 24 24">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="M3 7l9 7 9-7" />
+          </svg><span>Kontak</span></a>
+      </nav>
+      <div class="side-foot">© 2026 Lanjar Kalam Syahputra</div>
     </aside>
+    <main class="main">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
 
-    <main class="main-content">
-      <div class="hero-grid">
-        <div class="hero-left">
-          <div class="category-tag">TEKNIK INFORMATIKA TI25</div>
-          <h1 class="hero-heading">Halo, Saya<br><span class="teal-text">Lanjar Kalam Syahputra</span></h1>
-          <p class="hero-desc">
-            Mahasiswa Teknik Informatika aktif yang berdedikasi tinggi dalam bidang pengembangan aplikasi
-            web, logika pemrograman C++, analisis sistem informasi, dan teknologi jaringan nirkabel.
-            Berpengalaman dalam kolaborasi organisasi KPUM serta perancangan desain layout visual.
-          </p>
+      <section class="hero">
+        <div class="hero-text">
+          <span class="eyebrow">Teknik Informatika TI25</span>
+          <h1>Halo, Saya<br><span class="grad">Lanjar Kalam Syahputra</span></h1>
+          <p class="lead">Mahasiswa Teknik Informatika aktif yang berdedikasi tinggi dalam bidang pengembangan aplikasi
+            web, logika pemrograman C++, analisis sistem informasi, dan teknologi jaringan nirkabel. Berpengalaman dalam
+            kolaborasi organisasi KPUM serta perancangan desain layout visual.</p>
+          <div class="typing">Saya <b id="typed"></b><span class="caret">|</span></div>
         </div>
-
-        <div class="hero-right">
-          <div class="profile-card">
-            <div class="large-avatar">LK</div>
-            <h3 class="profile-name">Lanjar Kalam Syahputra</h3>
-            <p class="profile-sub">Informatics Engineering Student</p>
-            <p class="profile-quote">"Menggabungkan kemampuan logika pemrograman dengan efisiensi sistem
-              informasi & desain UI yang presisi."</p>
-            <div class="chip-container">
-              <span class="chip">C++ Logic</span>
-              <span class="chip">Web Dev</span>
-              <span class="chip">Wireless Net</span>
-              <span class="chip">KPUM Layout</span>
-            </div>
+        <aside class="pcard">
+          <div class="ring">
+            <div class="avatar">LK</div>
           </div>
-        </div>
-      </div>
+          <h2>Lanjar Kalam Syahputra</h2>
+          <div class="role">Informatics Engineering Student</div>
+          <p class="quote">"Menggabungkan kemampuan logika pemrograman dengan efisiensi sistem informasi &amp; desain UI
+            yang presisi."</p>
+          <div class="chips"><span>C++ Logic</span><span>Web Dev</span><span>Wireless Net</span><span>KPUM Layout</span>
+          </div>
+        </aside>
+      </section>
+      <section class="stats">
+        <div class="stat reveal"><b data-count="25">0</b><span>Angkatan TI25</span></div>
+        <div class="stat reveal"><b data-count="4">0</b><span>Fokus Keahlian</span></div>
+        <div class="stat reveal"><b data-count="1">0</b><span>Organisasi KPUM</span></div>
+        <div class="stat reveal"><b>100%</b><span>Semangat Belajar</span></div>
+      </section>
+      <section class="quick">
+        <a class="qcard reveal" href="profile.html">
+          <div class="qi">👤</div>
+          <h3>Profile</h3>
+          <p>Kenali siapa saya lebih dekat.</p><span>Lihat →</span>
+        </a>
+        <a class="qcard reveal" href="pendidikan.html">
+          <div class="qi">🎓</div>
+          <h3>Pendidikan</h3>
+          <p>Perjalanan akademik &amp; organisasi.</p><span>Lihat →</span>
+        </a>
+        <a class="qcard reveal" href="keahlian.html">
+          <div class="qi">⚡</div>
+          <h3>Keahlian</h3>
+          <p>Skill teknis &amp; desain saya.</p><span>Lihat →</span>
+        </a>
+        <a class="qcard reveal" href="kontak.html">
+          <div class="qi">✉️</div>
+          <h3>Kontak</h3>
+          <p>Mari berkolaborasi bersama.</p><span>Lihat →</span>
+        </a>
+      </section>
     </main>
   </div>
-
 </body>
 
 </html>
